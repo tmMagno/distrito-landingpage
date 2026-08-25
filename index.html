@@ -3,7 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Distrito Tech — Consultoría Inmobiliaria</title>
+  <title>Distrito Tech — Consultoría Inmobiliaria en Buenos Aires</title>
+  <meta name="description" content="Consultoría inmobiliaria en Buenos Aires: diseño de procesos, CRM, capacitación de equipos y estrategia de marca para que tu inmobiliaria crezca. Diagnóstico inicial gratuito.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://distritotech.xyz/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Distrito Tech — Consultoría Inmobiliaria en Buenos Aires">
+  <meta property="og:description" content="Transformamos procesos, equipos y tecnología de inmobiliarias para que compitan en el mercado actual.">
+  <meta property="og:url" content="https://distritotech.xyz/">
+  <meta property="og:image" content="https://distritotech.xyz/og-image.jpg">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Distrito Tech — Consultoría Inmobiliaria en Buenos Aires">
+  <meta name="twitter:description" content="Transformamos procesos, equipos y tecnología de inmobiliarias para que compitan en el mercado actual.">
+  <meta name="twitter:image" content="https://distritotech.xyz/og-image.jpg">
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Distrito Tech",
+    "description": "Consultoría inmobiliaria: diseño de procesos, CRM, capacitación de equipos y estrategia de marca.",
+    "url": "https://distritotech.xyz/",
+    "email": "distrito.proptech@gmail.com",
+    "areaServed": "Buenos Aires, Argentina",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "sameAs": [
+      "https://instagram.com/distrito.proptech"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -90,15 +129,52 @@
 
     /* HERO */
     .hero {
-      min-height: 100vh;
+      min-height: 90vh;
       display: flex;
       align-items: center;
       padding: 100px 2rem 4rem;
       max-width: 1100px;
       margin: 0 auto;
+      position: relative;
+      overflow: hidden;
     }
 
-    .hero-content { max-width: 640px; }
+    .hero-blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .hero-blob-1 {
+      top: -15%;
+      right: -8%;
+      width: 480px;
+      height: 480px;
+      background: radial-gradient(circle at 30% 30%, var(--green-400) 0%, var(--green-100) 55%, transparent 75%);
+      opacity: 0.55;
+    }
+
+    .hero-blob-2 {
+      bottom: -20%;
+      right: 10%;
+      width: 340px;
+      height: 340px;
+      background: radial-gradient(circle at 60% 40%, var(--green-600) 0%, var(--green-400) 50%, transparent 75%);
+      opacity: 0.3;
+    }
+
+    .hero-blob-3 {
+      top: 20%;
+      left: -12%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle at 50% 50%, var(--green-100) 0%, transparent 70%);
+      opacity: 0.6;
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 640px; }
 
     .hero-eyebrow {
       display: inline-flex;
@@ -543,11 +619,44 @@
     footer nav a { font-size: 13px; color: var(--gray-500); text-decoration: none; }
     footer nav a:hover { color: var(--gray-900); }
 
+    /* WHATSAPP FLOTANTE */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      z-index: 200;
+      transition: transform 0.2s;
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover { transform: scale(1.08); }
+
+    .whatsapp-float svg { width: 28px; height: 28px; }
+
+    /* FOCUS STATES */
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 2px solid var(--green-400);
+      outline-offset: 2px;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 768px) {
       nav { padding: 0 1rem; }
       .nav-links { display: none; }
-      .hero { padding: 80px 1rem 3rem; }
+      .hero { padding: 90px 1rem 2.5rem; min-height: auto; }
+      .hero-blob-1, .hero-blob-2, .hero-blob-3 { width: 220px; height: 220px; filter: blur(40px); }
       section { padding: 3rem 1rem; }
       .metrics-grid { grid-template-columns: repeat(2, 1fr); }
       .proceso-grid { grid-template-columns: 1fr; }
@@ -557,6 +666,7 @@
       .contacto-grid { grid-template-columns: 1fr; }
       #caso, #contacto-section { padding: 2.5rem 1.5rem; border-radius: 12px; }
       footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .whatsapp-float { bottom: 16px; right: 16px; width: 52px; height: 52px; }
     }
   </style>
 </head>
@@ -575,12 +685,15 @@
 
   <!-- HERO -->
   <div class="hero">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
     <div class="hero-content">
       <div class="hero-eyebrow">Consultoría inmobiliaria · Buenos Aires, Argentina</div>
       <h1>El sector inmobiliario cambió.<br><em>¿Tu inmobiliaria también?</em></h1>
       <p>Transformamos procesos, equipos y tecnología de inmobiliarias para que compitan en el mercado actual — con metodologías probadas y experiencia real en el rubro.</p>
       <div class="hero-actions">
-        <a href="#contacto" class="btn-primary">Hablemos de tu negocio →</a>
+        <a href="#contacto" class="btn-primary">Agendá tu diagnóstico gratuito →</a>
         <a href="#servicios" class="btn-secondary">Ver servicios</a>
       </div>
     </div>
@@ -707,12 +820,12 @@
 
   <!-- NOSOTROS -->
   <section id="nosotros">
-    <div class="section-label">Quién está detrás</div>
+    <div class="section-label">Quiénes somos</div>
     <div class="perfil-wrap">
       <div>
         <h2 class="section-title">Experiencia real<br>en el rubro.</h2>
-        <p class="perfil-desc">Perfil único que combina conocimiento del sector inmobiliario, metodologías ágiles certificadas internacionalmente y tecnología aplicada al negocio. No somos consultores genéricos: vivimos el mercado inmobiliario por dentro.</p>
-        <p class="perfil-titulo">Especialista en Iniciación y Gestión de Proyectos · Consultor de Operaciones · Martillero, Corredor y Tasador Público (en curso)</p>
+        <p class="perfil-desc">Somos un equipo que combina conocimiento del sector inmobiliario, metodologías ágiles certificadas internacionalmente y tecnología aplicada al negocio. No somos consultores genéricos: vivimos el mercado inmobiliario por dentro.</p>
+        <p class="perfil-titulo">Especialistas en Gestión de Proyectos, Consultoría de Operaciones y tasación inmobiliaria.</p>
         <div class="tags" style="margin-top: 1.25rem;">
           <span class="tag highlight">Gestión de Proyectos — Tec de Monterrey</span>
           <span class="tag highlight">Iniciación y Planificación de Proyectos — UC Irvine</span>
@@ -751,9 +864,9 @@
           </a>
         </div>
         <div class="form-group">
-          <input type="text" id="nombre" placeholder="Nombre">
-          <input type="email" id="email" placeholder="Email">
-          <select id="servicio">
+          <input type="text" id="nombre" placeholder="Nombre" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <select id="servicio" required>
             <option value="" disabled selected>¿Qué servicio te interesa?</option>
             <option>Diseño de procesos operativos</option>
             <option>CRM y seguimiento de datos</option>
@@ -763,7 +876,7 @@
             <option>Plan de crecimiento</option>
             <option>Consultoría integral</option>
           </select>
-          <textarea id="mensaje" placeholder="Contanos sobre tu inmobiliaria"></textarea>
+          <textarea id="mensaje" placeholder="Contanos sobre tu inmobiliaria" required></textarea>
           <button class="btn-form" onclick="enviarMensaje()">Enviar mensaje →</button>
           <p class="form-success" id="form-success">✓ Mensaje enviado. Te respondemos pronto.</p>
         </div>
@@ -781,6 +894,15 @@
       <a href="#contacto">Contacto</a>
     </nav>
   </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <!-- TODO: reemplazar 54911XXXXXXXX por tu número real con código de país, sin +, sin espacios -->
+  <a href="https://wa.me/54911XXXXXXXX?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20Distrito%20Tech" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.9.529 3.68 1.446 5.194L2 22l4.929-1.42A9.945 9.945 0 0 0 12.001 22C17.523 22 22 17.523 22 12S17.523 2 12.001 2zm0 18.2c-1.72 0-3.32-.508-4.663-1.38l-.334-.207-3.117.898.906-3.03-.219-.348A8.19 8.19 0 0 1 3.8 12c0-4.53 3.671-8.2 8.201-8.2 4.529 0 8.199 3.67 8.199 8.2 0 4.53-3.67 8.2-8.199 8.2z"/>
+    </svg>
+  </a>
 
   <script>
     function enviarMensaje() {
