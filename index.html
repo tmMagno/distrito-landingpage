@@ -1,178 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es-AR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Distrito | Refacción, staging y contenido inmobiliario en CABA y alrederores</title>
-<meta name="description" content="Distrito es un estudio de refacción, home staging y contenido inmobiliario. Elevamos el valor de tu propiedad antes de salir a la venta en Palermo, Las Cañitas y barrios cercanos.">
-<meta name="theme-color" content="#342D2D">
-<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9Ijk2IiBmaWxsPSIjMkU0MDM2Ii8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTE3LjkgMTAyLjQpIHNjYWxlKDAuMzcyNCkiPjxwYXRoIGZpbGw9IiNGQ0Y5RjIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzIC0xMSkiIGQ9Ik0xNCw4MzVDMTMsODM0IDEzLDc0MSAxMyw0MjNMMTMsMTJMMTUsMTFDMTcsMTEgOTYsMTEgMTkyLDExQzM4NSwxMiAzNzgsMTIgNDIxLDIwQzQyNSwyMCA0MzIsMjIgNDM3LDIyQzQ0NSwyNCA0NTAsMjUgNDYzLDI5QzQ3NSwzMiA0OTcsMzkgNTA4LDQ0QzUxNCw0NiA1MTksNDggNTE5LDQ4QzUyMCw0OCA1NTEsNjMgNTU1LDY2QzU1Nyw2NyA1NjIsNzAgNTY2LDcyQzU3MCw3NCA1NzUsNzcgNTc4LDc5QzU4MSw4MSA1ODQsODMgNTg1LDg0QzU5MCw4NyA2MTYsMTA3IDYyNCwxMTRDNjY1LDE1MCA3MDAsMTk4IDcyMSwyNTBDNzI0LDI1NiA3MjcsMjYzIDcyOCwyNjVDNzI4LDI2NyA3MjksMjY4IDcyOSwyNjlDNzI5LDI3MCA3MzAsMjcyIDczMCwyNzNDNzM0LDI4MyA3NDEsMzA2IDc0NSwzMjhDNzU5LDM5NSA3NTcsNDg1IDczOSw1NDRDNzM1LDU1OCA3MzQsNTYxIDczMiw1NzBDNzMwLDU3NCA3MjgsNTgwIDcyNyw1ODJDNzI3LDU4MyA3MjYsNTg1IDcyNiw1ODZDNzI2LDU4NiA3MjQsNTkxIDcyMiw1OTZDNzIwLDYwMSA3MTcsNjA3IDcxNiw2MTBDNzE1LDYxMiA3MTQsNjE1IDcxMyw2MTZDNzEyLDYxNyA3MTEsNjIxIDcwOSw2MjRDNzAyLDYzNiA3MDEsNjM5IDY5OCw2NDNDNjkyLDY1MyA2ODksNjU4IDY4NCw2NjRDNjgyLDY2OCA2NzcsNjc0IDY3NSw2NzhDNjUxLDcxMiA2MDYsNzUyIDU2NCw3NzdDNTYxLDc3OCA1NTgsNzgwIDU1Niw3ODFDNTU0LDc4MiA1MjMsNzk4IDUxOCw3OTlDNTE3LDgwMCA1MTQsODAxIDUxMiw4MDJDNTA5LDgwMyA1MDYsODA0IDUwMyw4MDVDNDkyLDgxMCA0ODUsODEyIDQ4MCw4MTNDNDc4LDgxNCA0NzYsODE0IDQ3Niw4MTVDNDc1LDgxNiA0NzQsODE2IDQ3Myw4MTZDNDcyLDgxNiA0NjksODE3IDQ2Niw4MTdDNDU4LDgyMCA0NTAsODIyIDQ0Miw4MjRDNDM3LDgyNCA0MzEsODI2IDQyOCw4MjZDNDIyLDgyOCA0MTEsODMwIDM5Miw4MzJDMzcxLDgzNiAzNTIsODM2IDE4NCw4MzZDNTQsODM2IDE1LDgzNiAxNCw4MzVaTTM0OCw2NjBDMzU0LDY2MCAzNjAsNjU5IDM2Myw2NThDMzY2LDY1OCAzNzEsNjU2IDM3Niw2NTZDMzkyLDY1MiA0MDYsNjQ4IDQxOCw2NDNDNDIwLDY0MyA0MjMsNjQxIDQyNiw2NDBDNDI5LDYzOSA0MzMsNjM3IDQzNSw2MzZDNDM4LDYzNCA0NDIsNjMyIDQ0Niw2MzBDNDYxLDYyMiA0NzIsNjEzIDQ4Niw1OThDNDk5LDU4NiA1MTQsNTY4IDUxNiw1NjJDNTE2LDU2MSA1MTgsNTU3IDUyMCw1NTRDNTIzLDU1MCA1MjUsNTQ0IDUyNiw1NDJDNTI4LDU0MCA1MjksNTM1IDUzMSw1MzJDNTMyLDUyOSA1MzQsNTI1IDUzNCw1MjRDNTM1LDUyMiA1MzYsNTE4IDUzNiw1MTZDNTQxLDUwMSA1NDYsNDc4IDU0Niw0NzRDNTQ2LDQ3MiA1NDcsNDY2IDU0OCw0NjBDNTUwLDQ0NyA1NDksMzk0IDU0NywzODBDNTQ0LDM1NyA1MzksMzM4IDUzMiwzMTdDNTMwLDMxMyA1MTksMjkxIDUxNywyODZDNTA1LDI2NyA0NzksMjM4IDQ2NCwyMjhDNDUyLDIxOSA0NDgsMjE3IDQ0MCwyMTNDNDM1LDIxMCA0MjcsMjA2IDQyMiwyMDRDNDE4LDIwMiA0MTMsMjAwIDQxMiwyMDBDNDEwLDE5OSA0MDEsMTk2IDM5MiwxOTRDMzkwLDE5MyAzODQsMTkyIDM3OSwxOTBDMzc0LDE5MCAzNjksMTg4IDM2NywxODhDMzYyLDE4NyAzNDgsMTg1IDMzMCwxODRDMzE2LDE4MyAyMTgsMTgzIDIxNiwxODRDMjE0LDE4NCAyMTMsNjYwIDIxNSw2NjFDMjE2LDY2MyAzMzYsNjYxIDM0OCw2NjBaIi8+PC9nPjwvc3ZnPg==">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Distrito | Refacción, staging y contenido inmobiliario en CABA y Gran Buenos Aires</title>
+<meta name="description" content="Distrito es un estudio de refacción, home staging y contenido inmobiliario para casas, PH y lotes en CABA y Gran Buenos Aires.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--c:#342D2D;--cr:#FCF9F2;--v:#2E4036;--s:#B9C4B6;--t2:#5f5a55;--line:rgba(52,45,45,.2)}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{font:400 17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--c);background:var(--cr);-webkit-font-smoothing:antialiased}
+:root,.s-cream{--bg:#F3EEE3;--ink:#342D2D;--mute:#625A58;--line:#D8D0BF;--surf:#FBF8F1;--acc:#4D6947;--accink:#F3EEE3;color-scheme:light}
+.s-dark{--bg:#342D2D;--ink:#F3EEE3;--mute:#C9C1B6;--line:#5A5151;--surf:#443C3C;--acc:#F3EEE3;--accink:#342D2D}
+.s-moss{--bg:#4D6947;--ink:#F3EEE3;--mute:#DDE3D5;--line:#7B9374;--surf:#5A7753;--acc:#F3EEE3;--accink:#342D2D}
+.s-cream,.s-dark,.s-moss{background:var(--bg);color:var(--ink)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;font-weight:700;line-height:1.1;margin:0;letter-spacing:-.02em}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--s);outline-offset:3px}
-.w{width:min(1180px,100% - 40px);margin-inline:auto}
-section{padding:112px 0}
-.dk{background:var(--c);color:var(--cr)}.gr{background:var(--v);color:var(--cr)}
-h1,h2,h3{font-weight:700;letter-spacing:-.025em;line-height:1.06}
-h2{font-size:clamp(32px,4.6vw,56px);max-width:16ch;margin-bottom:56px}
-.logo{display:block;width:124px;height:auto;color:var(--cr)}
-header{position:fixed;inset:0 0 auto;z-index:10;background:rgba(52,45,45,.94);backdrop-filter:blur(8px);color:var(--cr)}
-header .w{display:flex;align-items:center;justify-content:space-between;height:68px}
-nav{display:flex;gap:30px;align-items:center;font-size:15px}
-nav a{text-decoration:none;opacity:.85;transition:opacity .2s}nav a:hover{opacity:1}
-.btn{display:inline-block;padding:14px 26px;border-radius:999px;font:500 16px Inter,sans-serif;text-decoration:none;border:1.5px solid currentColor;background:none;color:inherit;cursor:pointer;transition:background .2s,color .2s}
-.btn.f{background:var(--cr);color:var(--c);border-color:var(--cr)}.btn.f:hover{background:var(--s);border-color:var(--s)}
-.btn.o:hover{background:var(--cr);color:var(--c)}
-nav .btn{padding:9px 20px;font-size:14px}
-.hero{padding:190px 0 120px}
-.hero h1{font-size:clamp(46px,9vw,118px);max-width:11ch;letter-spacing:-.04em;line-height:.98}
-.hero .row{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:72px;align-items:end}
-.hero p{font-size:clamp(18px,2vw,22px);max-width:34ch;line-height:1.5}
-.acts{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
-.note{border-left:3px solid var(--s);padding-left:18px;font-size:15px;color:var(--s);max-width:44ch;line-height:1.55}
-.list>div{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;padding:34px 0;border-top:1px solid var(--line)}
-.list>div:last-child{border-bottom:1px solid var(--line)}
-.list h3{font-size:clamp(22px,2.6vw,30px)}
-.list p{color:var(--t2);max-width:52ch}
-.packs{display:grid;grid-template-columns:repeat(3,1fr)}
-.pk{padding:40px 32px 44px;border-left:1px solid rgba(252,249,242,.28)}
-.pk:first-child{border-left:0;padding-left:0}
-.pk.hl{background:var(--cr);color:var(--c);border:0}
-.pk h3{font-size:30px;margin-bottom:6px}
-.pk .sub{opacity:.8;margin-bottom:24px;font-size:15px}
-.pk ul{list-style:none;padding:0;display:grid;gap:12px;margin-bottom:36px}
-.pk li{padding-left:22px;position:relative}
-.pk li:before{content:"";position:absolute;left:0;top:.72em;width:10px;height:2px;background:currentColor}
-.steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:56px 40px;counter-reset:n}
-.steps li{counter-increment:n;border-top:2px solid var(--v);padding-top:20px}
-.steps li:before{content:counter(n);display:block;font:700 56px/1 Inter,sans-serif;letter-spacing:-.04em;color:var(--v);margin-bottom:18px}
-.steps h3{font-size:21px;margin-bottom:8px;letter-spacing:-.01em}
-.steps p{color:var(--t2);font-size:16px}
-.about{display:grid;grid-template-columns:1.5fr 1fr;gap:72px;align-items:start}
-.about .big{font-size:clamp(24px,3vw,36px);line-height:1.3;letter-spacing:-.02em;font-weight:500}
-.about dl{display:grid;gap:26px}.about dt{font-weight:700;font-size:19px}.about dd{color:var(--t2)}
-.contact{display:grid;grid-template-columns:1.3fr 1fr;gap:80px}
-form{display:grid;grid-template-columns:1fr 1fr;gap:26px 28px}
-label{display:grid;gap:6px;font-size:14px;color:var(--s)}
-.full{grid-column:1/-1}
-input,select,textarea{font:400 17px Inter,sans-serif;color:var(--cr);background:transparent;border:0;border-bottom:1.5px solid rgba(252,249,242,.45);padding:10px 0;border-radius:0;width:100%}
-select option{color:#222}
-textarea{resize:vertical;min-height:84px}
-input:focus,select:focus,textarea:focus{outline:0;border-color:var(--cr)}
-.chk{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--s)}
-.chk input{width:20px;height:20px;margin-top:3px;accent-color:var(--s);flex:none}
-.side p{margin-bottom:22px}.side a{font-size:20px;font-weight:500}
-footer{background:var(--c);color:var(--cr);padding:0 0 40px}
-footer .big{width:100%;height:auto;display:block;color:var(--cr);margin:24px 0 36px}
-footer small{display:block;color:var(--s);font-size:14px;max-width:70ch}
-@media (max-width:860px){
- section{padding:80px 0}.hero{padding-top:140px}
- .hero .row,.about,.contact,.list>div,.packs,.steps{grid-template-columns:1fr}
- .list>div{gap:10px}.pk,.pk:first-child{border-left:0;border-top:1px solid rgba(252,249,242,.28);padding:32px 0}.pk.hl{padding:32px 24px}
- .pk:first-child{border-top:0}.contact{gap:48px}form{grid-template-columns:1fr}nav a:not(.btn){display:none}
-}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font:700 22px "Bricolage Grotesque",sans-serif;text-decoration:none;letter-spacing:-.02em}
+nav{display:flex;gap:22px;align-items:center;font-size:15px}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+nav .cta{color:var(--accink);background:var(--acc);padding:8px 16px;border-radius:6px;font-weight:500}
+@media(max-width:760px){nav a:not(.cta){display:none}}
+.btn{display:inline-block;background:var(--acc);color:var(--accink);padding:14px 26px;border-radius:6px;text-decoration:none;font-weight:500;border:0;font-size:16px;cursor:pointer;font-family:inherit}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.hero{padding:80px 24px 96px}
+.hero h1{font-size:clamp(46px,9.5vw,116px);max-width:11ch;line-height:1.02}
+.hero p{font-size:clamp(21px,2.6vw,30px);line-height:1.45;color:var(--mute);max-width:34ch;margin:32px 0 44px}
+.hero .row{display:flex;gap:14px;flex-wrap:wrap}
+section{padding:80px 0}
+h2{font-size:clamp(28px,4vw,42px);max-width:20ch;margin-bottom:40px}
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px}
+.svc div{padding:22px 0;border-top:1px solid var(--line)}
+.svc h3{font-size:22px;margin-bottom:6px}
+.svc p{margin:0;color:var(--mute);max-width:46ch}
+@media(max-width:760px){.svc{grid-template-columns:1fr}}
+.packs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pack{background:var(--surf);padding:28px;border-radius:4px;display:flex;flex-direction:column}
+.pack h3{font-size:26px}
+.pack .sub{color:var(--mute);margin:4px 0 18px}
+.pack ul{margin:0 0 24px;padding-left:18px;flex:1}
+.pack li{margin-bottom:6px}
+.pack a{font-weight:500}
+@media(max-width:860px){.packs{grid-template-columns:1fr}}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:32px 40px;counter-reset:s}
+ol.steps li{counter-increment:s;border-top:2px solid var(--ink);padding-top:14px}
+ol.steps li::before{content:counter(s);font:700 15px "Bricolage Grotesque",sans-serif;color:var(--mute);display:block;margin-bottom:6px}
+ol.steps h3{font-size:20px;margin-bottom:4px}
+ol.steps p{margin:0;color:var(--mute);font-size:16px}
+@media(max-width:860px){ol.steps{grid-template-columns:1fr}}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:56px}
+.about p.lead{font-size:20px;margin:0}
+.about h3{font-size:20px;margin-bottom:2px}
+.about .pt{margin-bottom:18px}
+.about .pt p{margin:0;color:var(--mute)}
+@media(max-width:860px){.about{grid-template-columns:1fr;gap:32px}}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:760px}
+label{display:flex;flex-direction:column;gap:6px;font-size:15px;color:var(--mute)}
+label.full,.full{grid-column:1/-1}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--surf);border:1px solid var(--line);border-radius:6px;padding:12px;width:100%}
+.chk{flex-direction:row;align-items:flex-start;gap:10px}
+.chk input{width:auto;margin-top:5px}
+@media(max-width:640px){form{grid-template-columns:1fr}}
+footer{padding:36px 0 48px;color:var(--mute);font-size:14px}
+footer p{margin:0 0 8px;max-width:78ch}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wm" viewBox="13 12 3872 951"><path fill="currentColor" fill-rule="evenodd" d="M1344,962C1315,961 1306,960 1299,959C1295,958 1287,956 1282,956C1276,955 1269,953 1266,952C1263,952 1257,950 1254,949C1239,946 1230,943 1224,940C1223,940 1221,939 1220,939C1220,939 1218,938 1216,938C1214,937 1210,935 1207,934C1172,920 1134,893 1109,865C1103,857 1089,839 1089,838C1089,837 1087,835 1086,832C1079,822 1069,800 1065,787C1060,767 1058,762 1056,743L1056,738L1155,738L1254,738L1256,743C1256,746 1257,748 1257,750C1257,758 1272,781 1281,789C1286,793 1299,801 1300,801C1301,801 1304,802 1307,804C1325,812 1332,813 1355,813C1368,813 1375,813 1383,811C1418,805 1438,780 1432,753C1428,736 1420,727 1399,718C1396,717 1392,715 1390,714C1385,712 1382,711 1372,707C1363,704 1343,699 1328,694C1324,694 1320,692 1317,692C1314,691 1309,690 1305,689C1284,684 1272,681 1267,680C1264,679 1260,678 1256,676C1252,676 1248,674 1246,674C1243,673 1237,671 1231,669C1221,666 1216,664 1200,659C1189,655 1172,646 1160,640C1150,633 1147,631 1134,620C1121,609 1111,598 1103,586C1098,580 1095,575 1095,574C1095,574 1094,571 1092,567C1090,564 1088,559 1088,558C1085,552 1080,530 1079,520C1077,507 1077,470 1079,463C1080,460 1081,454 1082,450C1083,442 1086,434 1088,430C1088,428 1090,424 1090,422C1102,393 1127,361 1151,344C1155,341 1161,337 1164,334C1173,328 1198,316 1211,311C1213,310 1216,308 1219,308C1229,304 1231,303 1236,302C1252,298 1255,297 1262,296C1265,295 1273,293 1279,293C1285,292 1293,290 1298,290C1310,288 1374,288 1388,290C1408,292 1430,296 1442,300C1454,303 1457,304 1462,306C1465,307 1470,309 1472,310C1506,322 1547,353 1572,386C1579,395 1593,417 1593,418C1593,419 1595,423 1597,428C1605,445 1612,466 1615,484C1616,489 1618,496 1618,501C1620,507 1620,510 1619,511C1618,512 1604,512 1526,512L1435,512L1434,510C1433,508 1432,505 1432,502C1426,481 1418,469 1400,455C1380,439 1327,433 1300,443C1284,449 1273,458 1268,471C1265,478 1265,496 1268,501C1268,503 1269,505 1269,506C1269,508 1276,516 1282,522C1288,527 1303,534 1316,538C1320,539 1324,541 1326,542C1327,542 1329,543 1330,543C1331,543 1336,544 1341,546C1356,550 1364,552 1382,556C1389,558 1396,560 1406,562C1408,563 1413,565 1417,566C1423,567 1436,571 1449,575C1452,576 1456,577 1458,578C1460,578 1466,580 1472,582C1477,584 1482,586 1484,586C1485,587 1489,588 1500,593C1551,612 1593,650 1609,690C1610,692 1611,695 1612,696C1623,723 1626,776 1618,804C1618,807 1616,811 1616,814C1605,852 1577,889 1541,913C1528,922 1498,937 1488,941C1484,942 1478,944 1474,945C1468,948 1464,949 1449,952C1429,958 1417,959 1394,961C1375,962 1351,963 1344,962ZM3522,962C3489,960 3476,958 3452,952C3436,949 3408,940 3396,934C3395,934 3392,932 3390,932C3299,893 3234,812 3212,710C3197,640 3203,549 3226,494C3226,492 3228,487 3230,482C3253,424 3305,366 3360,334C3388,319 3418,306 3439,302C3443,300 3448,299 3451,298C3453,298 3456,297 3457,297C3458,297 3462,296 3466,296C3495,289 3514,288 3551,288C3580,289 3590,290 3607,293C3622,295 3640,299 3648,301C3650,302 3653,303 3655,303C3657,304 3663,306 3668,308C3674,310 3679,311 3680,312C3682,312 3683,313 3684,313C3684,313 3686,314 3687,314C3695,317 3728,334 3744,345C3808,386 3856,457 3874,535C3886,587 3888,652 3878,700C3877,704 3875,710 3874,714C3871,729 3863,753 3856,768C3840,806 3825,829 3796,861C3776,883 3742,908 3711,924C3702,928 3677,939 3676,939C3675,939 3673,940 3672,940C3667,942 3662,944 3656,946C3653,946 3648,948 3646,949C3627,954 3605,958 3583,960C3551,963 3541,963 3522,962ZM14,952C13,951 13,858 13,540L13,129L15,128C17,128 96,128 192,128C385,129 378,128 421,136C425,137 432,139 437,140C445,141 450,142 463,146C475,149 497,156 508,161C514,163 519,165 519,165C520,165 551,180 555,183C557,184 562,187 566,189C570,191 575,194 578,196C581,198 584,200 585,200C590,204 616,224 624,231C665,267 700,315 721,367C724,373 727,380 728,382C728,384 729,386 729,386C729,387 730,389 730,390C734,400 741,423 745,445C759,512 757,602 739,662C735,675 734,678 732,686C730,692 728,697 727,699C727,700 726,702 726,703C726,703 724,708 722,713C720,718 717,724 716,727C715,729 714,732 713,733C712,734 711,738 709,741C702,753 701,756 698,760C692,770 689,775 684,781C682,785 677,791 675,795C651,829 606,869 564,894C561,895 558,897 556,898C554,899 523,915 518,916C517,917 514,918 512,919C509,920 506,922 503,922C492,927 485,929 480,930C478,931 476,932 476,932C475,933 474,933 473,933C472,933 469,934 466,934C458,937 450,939 442,940C437,941 431,943 428,944C422,945 411,947 392,949C371,953 352,953 184,953C54,953 15,953 14,952ZM807,952C805,950 806,299 807,298C809,296 1004,297 1006,298C1008,300 1008,950 1006,952C1004,953 808,954 807,952ZM1921,952C1902,951 1883,948 1866,944C1864,943 1859,941 1855,940C1851,940 1848,938 1846,938C1845,937 1842,936 1840,935C1832,933 1814,925 1809,921C1807,920 1804,918 1800,916C1793,912 1777,899 1770,891C1765,886 1749,866 1749,865C1749,864 1747,861 1744,856C1742,852 1740,849 1740,848C1740,848 1738,843 1736,837C1730,824 1726,810 1724,800C1718,765 1718,770 1717,611L1716,466L1677,465C1655,465 1637,464 1637,464C1637,464 1637,427 1637,381C1637,335 1637,298 1637,298C1637,298 1655,297 1677,297L1716,296L1717,218C1717,176 1717,140 1717,139C1717,138 1737,138 1817,138L1918,138L1918,218L1918,296L1983,297C2018,297 2048,297 2048,298C2049,299 2049,463 2048,464C2048,465 2018,465 1983,465L1918,466L1918,598C1918,741 1918,743 1923,755C1933,778 1945,782 2010,782C2039,782 2049,782 2050,783C2052,785 2052,950 2050,952C2048,953 1949,953 1921,952ZM2101,951C2099,948 2100,300 2101,298C2103,296 2299,296 2301,298C2302,299 2302,314 2302,351C2302,379 2302,402 2303,403C2303,403 2304,402 2305,400C2337,358 2362,336 2402,315C2406,313 2410,310 2410,310C2411,309 2419,306 2440,300C2443,298 2451,296 2456,296C2462,295 2469,293 2472,293C2480,291 2505,290 2507,291C2508,292 2508,314 2508,396C2508,478 2508,501 2507,502C2506,504 2501,504 2464,504C2416,505 2403,506 2380,514C2338,528 2316,553 2306,598C2302,618 2302,629 2302,793C2302,899 2302,950 2301,951C2299,954 2103,954 2101,951ZM2543,952C2541,950 2542,298 2544,298C2546,297 2739,297 2741,298C2744,298 2744,952 2741,952C2738,954 2544,953 2543,952ZM3064,952C3045,951 3023,948 3008,944C3006,943 3001,941 2998,940C2951,928 2908,896 2889,860C2887,856 2884,852 2884,851C2883,850 2880,843 2876,833C2875,830 2872,820 2870,812C2867,803 2863,780 2861,764C2860,755 2859,715 2859,609L2858,466L2820,465C2794,465 2781,465 2780,464C2779,463 2779,448 2779,381C2779,314 2779,299 2780,298C2781,297 2794,297 2820,297L2858,296L2859,218L2860,138L2960,138L3060,138L3060,217L3060,296L3126,297L3192,298L3192,381L3192,464L3126,465L3060,466L3060,602C3060,744 3060,741 3065,754C3068,765 3078,774 3090,778C3102,781 3113,782 3153,782C3173,782 3190,782 3191,783C3194,783 3194,950 3192,952C3190,953 3092,953 3064,952ZM3560,787C3567,786 3574,785 3575,784C3576,784 3581,782 3585,781C3610,773 3637,752 3654,728C3659,719 3666,705 3666,702C3666,702 3666,701 3667,701C3667,700 3669,697 3670,693C3671,689 3673,684 3674,681C3674,678 3675,675 3675,674C3675,672 3676,670 3676,668C3679,662 3680,627 3679,609C3677,582 3675,570 3666,546C3659,526 3641,502 3620,487C3584,459 3527,454 3484,476C3450,494 3429,519 3416,560C3405,595 3406,654 3417,692C3420,704 3428,722 3433,728C3434,729 3435,731 3435,732C3435,734 3450,751 3457,757C3486,782 3518,791 3560,787ZM348,777C354,776 360,776 363,775C366,775 371,773 376,772C392,770 406,765 418,760C420,760 423,758 426,757C429,756 433,754 435,753C438,751 442,749 446,747C461,739 472,730 486,716C499,703 514,685 516,679C516,678 518,674 520,670C523,667 525,662 526,659C528,656 529,652 531,649C532,646 534,642 534,640C535,639 536,635 536,632C541,618 546,595 546,590C546,589 547,583 548,577C550,564 549,511 547,497C544,474 539,455 532,434C530,430 519,408 517,404C505,384 479,355 464,345C452,336 448,334 440,330C435,327 427,324 422,322C418,320 413,317 412,317C410,316 401,313 392,311C390,310 384,308 379,308C374,307 369,305 367,305C362,304 348,302 330,301C316,300 218,300 216,301C214,301 213,777 215,778C216,780 336,778 348,777ZM892,229C876,228 863,224 848,217C831,209 810,191 802,177C801,175 799,172 798,170C797,167 795,163 794,160C793,156 791,152 790,149C783,127 788,91 800,70C802,66 804,62 804,62C804,62 807,58 811,54C815,50 818,46 818,46C818,42 843,26 858,20C873,13 907,10 928,14C948,17 952,18 964,24C1007,46 1030,89 1024,135C1024,142 1022,149 1022,151C1021,153 1020,157 1018,160C1012,179 987,207 968,215C966,216 962,218 960,219C958,221 953,222 949,223C945,224 940,226 938,227C934,228 908,230 904,230C903,230 898,229 892,229ZM2628,229C2606,227 2586,220 2569,208C2562,204 2541,183 2541,181C2541,180 2540,179 2540,178C2526,162 2519,115 2527,92C2528,89 2530,85 2530,82C2538,60 2561,36 2586,24C2611,12 2652,8 2679,16C2681,17 2684,18 2686,18C2689,18 2713,30 2718,35C2720,37 2724,40 2725,41C2736,49 2752,71 2756,84C2756,87 2758,91 2758,94C2765,115 2761,153 2749,172C2747,176 2745,179 2745,180C2744,183 2728,199 2720,206C2701,220 2681,227 2656,229C2649,230 2642,230 2641,230C2639,230 2634,229 2628,229Z"/></symbol></svg>
-<header><div class="w">
- <a href="#inicio" aria-label="Distrito, inicio"><svg class="logo" viewBox="0 0 3872 951" role="img" aria-label="Distrito"><use href="#wm"/></svg></a>
- <nav aria-label="Principal"><a href="#servicios">Servicios</a><a href="#packs">Packs</a><a href="#proceso">Cómo trabajamos</a><a href="#nosotros">Nosotros</a><a class="btn f" href="#contacto">Pedí tu diagnóstico</a></nav>
+<header><div class="wrap">
+<a class="logo" href="#inicio">Distrito</a>
+<nav><a href="#servicios">Servicios</a><a href="#packs">Packs</a><a href="#proceso">Cómo trabajamos</a><a href="#nosotros">Nosotros</a><a class="cta" href="#contacto">Pedí tu diagnóstico</a></nav>
 </div></header>
-<main>
-<section class="hero dk" id="inicio"><div class="w">
- <h1>Elevamos el valor de tu propiedad.</h1>
- <div class="row">
-  <div><p>Refacción, home staging y contenido inmobiliario para que tu propiedad llegue al mercado en su mejor versión, en Palermo, Las Cañitas y barrios cercanos.</p>
-  <div class="acts"><a class="btn f" href="#contacto">Pedí tu diagnóstico</a><a class="btn o" href="#servicios">Ver servicios</a></div></div>
-  <!--<p class="note">Distrito no realiza operaciones de corretaje. La venta y la tasación las realizan profesionales matriculados independientes.</p>-->
- </div>
+
+<main id="inicio">
+<div class="wrap hero">
+<div><h1>Tu casa o PH, lista para venderse bien.</h1>
+<p>Refacción, home staging y contenido inmobiliario para casas, PH y lotes en CABA y Gran Buenos Aires.</p>
+<div class="row"><a class="btn" href="#contacto">Pedí tu diagnóstico</a><a class="btn alt" href="#servicios">Ver servicios</a></div></div>
+</div>
+
+<section id="servicios" class="s-dark"><div class="wrap">
+<h2>Todo lo que tu propiedad necesita antes de salir a la venta.</h2>
+<div class="svc">
+<div><h3>Contenido inmobiliario</h3><p>Fotografía, video, tour 360°, plano 2D y aviso redactado, listos para que tu corredor los publique.</p></div>
+<div><h3>Home staging</h3><p>Mobiliario y decoración para presentar tu propiedad en su mejor versión. Montaje en 3 a 5 días y retiro al cerrar.</p></div>
+<div><h3>Diagnóstico de obras</h3><p>Visitamos la propiedad y te decimos qué conviene reformar y cuánto cuesta. No incluye tasación: si la necesitás, te derivamos a un tasador matriculado independiente, que contratás directamente.</p></div>
+<div><h3>Refacción</h3><p>Proyecto, presupuesto cerrado y obra coordinada, ejecutada por <a href="https://magtech.space">Magtech</a>. Un profesional habilitado firma y dirige las intervenciones que lo requieren.</p></div>
+<div><h3>Patios, jardines y frentes</h3><p>Diseño de exteriores para que el patio y el frente sumen en las fotos y en la visita.</p></div>
+<div><h3>Preparación de lotes</h3><p>Permisos, demolición, retiro de escombros y limpieza, para casas y PH cuyo mejor destino es la venta del terreno.</p></div>
+</div>
 </div></section>
 
-<section id="servicios"><div class="w">
- <h2>Todo lo que tu propiedad necesita antes de salir a la venta.</h2>
- <div class="list">
-  <div><h3>Diagnóstico de potencial</h3><p>Visitamos la propiedad y te decimos qué conviene reformar, cuánto cuesta y qué puede sumar al valor. La tasación la realiza un profesional matriculado.</p></div>
-  <div><h3>Refacción</h3><p>Proyecto, presupuesto cerrado y obra coordinada. Un arquitecto o maestro mayor de obra firma y dirige cada intervención.</p></div>
-  <div><h3>Diseño de interiores y paisajismo</h3><p>Espacios pensados para verse y sentirse mejor, adentro y afuera.</p></div>
-  <div><h3>Home staging</h3><p>Mobiliario y decoración para presentar tu propiedad en su mejor versión. Montaje en 3 a 5 días y retiro al cerrar.</p></div>
-  <div><h3>Contenido inmobiliario</h3><p>Fotografía, video, tour 360°, plano 2D y redacción del aviso, listos para que tu corredor los publique.</p></div>
-  <div><h3>Preparación de lotes</h3><p>Permisos, demolición, retiro de escombros y limpieza, para casas y PH cuyo mejor destino es la venta del terreno.</p></div>
- </div>
+<section id="packs" class="s-cream"><div class="wrap">
+<h2>Tres formas de empezar.</h2>
+<div class="packs">
+<div class="pack"><h3>Vender mejor</h3><p class="sub">Para salir al mercado mejor presentado.</p>
+<ul><li>Home staging</li><li>Fotografía y video profesional</li><li>Plano 2D</li><li>Aviso redactado</li></ul><a href="#contacto">Consultar</a></div>
+<div class="pack"><h3>Renovar para vender</h3><p class="sub">Un solo interlocutor de punta a punta.</p>
+<ul><li>Diagnóstico y proyecto</li><li>Refacción coordinada con Magtech</li><li>Home staging y contenido</li></ul><a href="#contacto">Consultar</a></div>
+<div class="pack"><h3>Diagnóstico</h3><p class="sub">Para decidir con datos.</p>
+<ul><li>Visita a la propiedad</li><li>Obras recomendadas</li><li>Costos estimados de obra y de staging</li><li>Derivación a tasador matriculado, si la necesitás</li></ul><a href="#contacto">Consultar</a></div>
+</div>
 </div></section>
 
-<section class="gr" id="packs"><div class="w">
- <h2>Tres formas de empezar.</h2>
- <div class="packs">
-  <div class="pk"><h3>Potencial</h3><p class="sub">Para decidir con datos.</p>
-   <ul><li>Visita y diagnóstico de la propiedad</li><li>Costos estimados de obra y de staging</li><li>Informe listo, más tasación</li></ul><a class="btn o" href="#contacto">Consultar</a></div>
-  <div class="pk hl"><h3>Elevar valor</h3><p class="sub">Para maximizar lo que vale.</p>
-   <ul><li>Diagnóstico y proyecto</li><li>Dirección y coordinación de la refacción</li><li>Home staging y contenido</li><li>Un solo interlocutor de punta a punta</li></ul><a class="btn" style="background:var(--v);color:var(--cr);border-color:var(--v)" href="#contacto">Consultar</a></div>
-  <div class="pk"><h3>Vender mejor</h3><p class="sub">Para salir al mercado mejor presentado.</p>
-   <ul><li>Home staging</li><li>Fotografía y video profesional</li><li>Plano 2D</li><li>Aviso redactado</li></ul><a class="btn o" href="#contacto">Consultar</a></div>
- </div>
+<section id="proceso" class="s-moss"><div class="wrap">
+<h2>Cómo trabajamos.</h2>
+<ol class="steps">
+<li><h3>Contanos tu propiedad</h3><p>Completás el formulario con los datos básicos y lo que necesitás.</p></li>
+<li><h3>Te contactamos</h3><p>Coordinamos una visita sin vueltas.</p></li>
+<li><h3>Visita y diagnóstico</h3><p>Relevamos qué conviene hacer, con costos de obra y de staging.</p></li>
+<li><h3>Obra, staging y contenido</h3><p>Ejecutamos la refacción y producimos fotos, video, tour 360° y aviso, en ese orden.</p></li>
+<li><h3>Entrega a tu corredor</h3><p>Le damos el material a tu corredor o inmobiliaria de confianza, que publica y gestiona la venta.</p></li>
+<li><h3>Te acompañamos</h3><p>Retiramos el mobiliario al cerrar y quedamos a disposición para lo que siga.</p></li>
+</ol>
 </div></section>
 
-<section id="proceso"><div class="w">
- <h2>Cómo trabajamos.</h2>
- <ol class="steps">
-  <li><h3>Contanos tu propiedad</h3><p>Completás el formulario con los datos básicos y lo que necesitás.</p></li>
-  <li><h3>Te contactamos</h3><p>Coordinamos una visita sin vueltas.</p></li>
-  <li><h3>Visita y diagnóstico</h3><p>Relevamos qué conviene hacer, con costos de obra y de staging. Si hace falta una tasación, la hace un tasador matriculado independiente.</p></li>
-  <li><h3>Obra, staging y contenido</h3><p>Ejecutamos la refacción y producimos fotos, video, tour 360° y aviso, en ese orden.</p></li>
-  <li><h3>Inmobiliarias Asociadas</h3><p>Le damos el material a empresa inmobiliaria que mas se adecue con tu propiedad.</p></li>
-  <li><h3>Te acompañamos</h3><p>No solo trabajamos con una red de inmobiliarias, tambien contamos con nuestra plataforma.</p></li>
- </ol>
+<section id="nosotros" class="s-cream"><div class="wrap about">
+<p class="lead">Somos un estudio joven. Coordinamos obra, diseño, staging y producción con un solo interlocutor, y trabajamos con profesionales habilitados en cada paso.</p>
+<div>
+<div class="pt"><h3>Mirada de arquitectura</h3><p>Cada intervención se proyecta, se presupuesta y se dirige con criterio técnico.</p></div>
+<div class="pt"><h3>Cabeza de estudio creativo</h3><p>Diseño y contenido pensados para que la propiedad se destaque.</p></div>
+<div class="pt"><h3>Conocimiento del mercado</h3><p>Sabemos qué mira un comprador cuando visita una propiedad y lo tenemos en cuenta en cada intervención.</p></div>
+</div>
 </div></section>
 
-<section id="nosotros" style="background:#f1ede3"><div class="w about">
- <p class="big">Somos un estudio joven que combina la mirada de un estudio de arquitectura, la creatividad de un estudio de contenido y el conocimiento del mercado inmobiliario. Coordinamos obra, diseño, staging y producción con un solo interlocutor, y trabajamos con profesionales matriculados en cada paso.</p>
- <dl>
-  <div><dt>Mirada de arquitectura</dt><dd>Cada intervención se proyecta, se presupuesta y se dirige con criterio técnico.</dd></div>
-  <div><dt>Cabeza de estudio creativo</dt><dd>Diseño y contenido pensados para que la propiedad se destaque.</dd></div>
-  <div><dt>Conocimiento del mercado</dt><dd>Sabemos qué mira un comprador y qué paga en Palermo, Las Cañitas y alrededores.</dd></div>
- </dl>
-</div></section>
-
-<section class="dk" id="contacto"><div class="w contact">
- <div><h2>Pedí tu diagnóstico.</h2>
- <form id="f">
-  <label>Nombre<input name="nombre" autocomplete="name" required></label>
-  <label>WhatsApp<input name="tel" type="tel" autocomplete="tel" required></label>
-  <label>Email<input name="mail" type="email" autocomplete="email"></label>
-  <label>Soy<select name="soy"><option>Propietario</option><option>Inmobiliaria o corredor</option></select></label>
-  <label>Barrio<input name="barrio" placeholder="Palermo, Las Cañitas..."></label>
-  <label>Tipo de propiedad<select name="tipo"><option>Departamento</option><option>PH</option><option>Casa</option><option>Lote</option></select></label>
-  <label class="full">Qué necesitás<select name="need"><option>Diagnóstico de potencial</option><option>Refacción</option><option>Home staging</option><option>Contenido inmobiliario</option><option>No sé todavía</option></select></label>
-  <label class="full">Mensaje<textarea name="msg"></textarea></label>
-  <label class="chk full"><input type="checkbox" required>Acepto que Distrito use estos datos para responder mi consulta.</label>
-  <div class="full"><button class="btn f" type="submit">Enviar por WhatsApp</button></div>
- </form></div>
- <div class="side"><p>También podés escribirnos directamente.</p><p><a data-wa href="#">WhatsApp</a></p><p><a data-mail href="#">Email</a></p><p style="color:var(--s);font-size:15px">Trabajamos en Palermo, Las Cañitas y barrios cercanos.</p></div>
+<section id="contacto" class="s-dark"><div class="wrap">
+<h2>Pedí tu diagnóstico.</h2>
+<form id="f">
+<label>Nombre<input name="nombre" required autocomplete="name"></label>
+<label>WhatsApp<input name="tel" type="tel" required autocomplete="tel"></label>
+<label>Email<input name="mail" type="email" autocomplete="email"></label>
+<label>Soy<select name="rol"><option>Propietario</option><option>Inmobiliaria o corredor</option></select></label>
+<label>Barrio<input name="barrio" placeholder="Tu barrio o localidad"></label>
+<label>Tipo de propiedad<select name="tipo"><option>Casa</option><option>PH</option><option>Departamento</option><option>Lote</option></select></label>
+<label class="full">Qué necesitás<select name="need"><option>Diagnóstico</option><option>Refacción</option><option>Home staging</option><option>Contenido inmobiliario</option><option>No sé todavía</option></select></label>
+<label class="full">Mensaje<textarea name="msg" rows="3"></textarea></label>
+<label class="chk full"><input type="checkbox" required>Acepto que Distrito use estos datos para responder mi consulta.</label>
+<div class="full"><button class="btn" type="submit">Enviar por WhatsApp</button></div>
+</form>
 </div></section>
 </main>
-<footer><div class="w">
- <svg class="big" viewBox="0 0 3872 951" role="img" aria-label="Distrito"><use href="#wm"/></svg>
- <small>Distrito no realiza operaciones de corretaje. La venta, el alquiler y la tasación de inmuebles las realizan profesionales matriculados independientes, contratados directamente por el cliente.</small>
- <small style="margin-top:10px">© <span id="y"></span> Distrito. Todos los derechos reservados.</small>
+
+<footer class="s-moss"><div class="wrap">
+<p>Trabajamos en CABA y Gran Buenos Aires.</p>
+<p>Distrito no realiza operaciones de corretaje. La venta, el alquiler y la tasación de inmuebles las realizan profesionales matriculados independientes, contratados directamente por el cliente.</p>
+<p>© Distrito. Todos los derechos reservados.</p>
 </div></footer>
+
 <script>
-// Reemplazá estos dos datos por los reales de Distrito.
-const WA='549XXXXXXXXXX', MAIL='distritotech@gmail.com';
-document.getElementById('y').textContent=new Date().getFullYear();
-document.querySelectorAll('[data-wa]').forEach(a=>{a.href='https://wa.me/'+WA;a.target='_blank';a.rel='noopener'});
-document.querySelectorAll('[data-mail]').forEach(a=>{a.href='mailto:'+MAIL;a.textContent=MAIL});
-document.getElementById('f').addEventListener('submit',e=>{
- e.preventDefault();const d=Object.fromEntries(new FormData(e.target));
- const t=`Hola Distrito, soy ${d.nombre} (${d.soy}).\nPropiedad: ${d.tipo}${d.barrio?' en '+d.barrio:''}.\nNecesito: ${d.need}.${d.msg?'\n'+d.msg:''}\nWhatsApp: ${d.tel}${d.mail?'\nEmail: '+d.mail:''}`;
- window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(t),'_blank','noopener');
+var PHONE="549XXXXXXXXXX"; // reemplazar por tu número con código de país, sin + ni espacios
+document.getElementById("f").addEventListener("submit",function(e){
+ e.preventDefault();
+ var d=new FormData(e.target);
+ var t="Hola, soy "+d.get("nombre")+" ("+d.get("rol")+"). Tengo "+d.get("tipo")+" en "+(d.get("barrio")||"mi zona")+" y necesito: "+d.get("need")+". "+(d.get("msg")||"")+" Mi contacto: "+d.get("tel")+(d.get("mail")?" / "+d.get("mail"):"");
+ window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(t),"_blank");
 });
 </script>
 </body>
